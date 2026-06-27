@@ -1,7 +1,7 @@
 # sony-camera-android
 
 Control a Sony Alpha camera from Android over a **wired USB** connection — live
-view, autofocus, and full-resolution capture — using PTP (Picture Transfer
+view, autofocus, and full-resolution capture - using PTP (Picture Transfer
 Protocol) with Sony's vendor extensions. No WiFi, no Sony SDK, no cloud.
 
 This is the camera-control engine extracted from a production photobooth app
@@ -11,15 +11,15 @@ recovers from the firmware quirks that make Sony USB control finicky.
 
 > **Status:** extracted and building as a standalone library + demo. The PTP
 > stack is battle-tested on the **Sony α6600 (ILCE-6600)**. Other Alpha bodies
-> that speak the same PC-Remote PTP dialect are likely to work but are untested
-> — reports welcome.
+> that speak the same PC-Remote PTP dialect are likely to work but are untested,
+> reports welcome.
 
 ---
 
 ## Features
 
-- 🔌 **Wired USB PTP** — talks directly to the camera via Android's USB Host API.
-- 📺 **Live view streaming** — JPEG frames decoded to `Bitmap` at ~15–30 fps.
+- 🔌 **Wired USB PTP** - talks directly to the camera via Android's USB Host API.
+- 📺 **Live view streaming** - JPEG frames decoded to `Bitmap` at ~15–30 fps.
 - 📸 **Full-resolution capture** — fires the shutter and downloads the JPEG off
   the camera, with ret/queue handling for Sony's transfer quirks.
 - ♻️ **Resilient connection** — a foreground service keeps the session alive in
